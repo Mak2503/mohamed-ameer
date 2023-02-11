@@ -1,38 +1,61 @@
-.App {
-  text-align: center;
+html {
+  scroll-behaviour: smooth;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.font-family-bold {
+  font-family: "HelveticaNowDisplay-Bold";
+}
+.font-family-regular {
+  font-family: "HelveticaNowDisplay-Regular";
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.container {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.image {
+  opacity: 1;
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  transition: 0.2s ease;
+  backface-visibility: visible;
+}
+
+.content {
+  transition: all 0.5s ease;
+  opacity: 1;
+  text-align: left;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.middle {
+  transition: all 0.2s ease;
+  opacity: 0;
+  position: relative;
+  /* top: 50%; */
+  /* margin-top: 20; */
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  text-align: left;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container:hover .image {
+  opacity: 0.9;
+}
+
+.container:hover .middle {
+  opacity: 1;
+}
+
+.letterSpacedText {
+  font-size: 0.875rem;
+  letter-spacing: 0.4em;
+  font-weight: 400;
+  color: #878a8f;
+  text-transform: uppercase;
 }
