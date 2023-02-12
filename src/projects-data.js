@@ -1,0 +1,48 @@
+export const projectData = [
+  {
+    id: "001",
+    imageUrl: "/assets/Hubolt/img1.jpg",
+    header: "Hubolt - Design Concept",
+    year: "2018 - 2019",
+    projectImages: [
+      "/assets/Hubolt/img1.jpg",
+      "/assets/Hubolt/img3.jpg",
+      "/assets/Hubolt/img4.jpg",
+      "/assets/Hubolt/img5.jpg",
+      "/assets/Hubolt/img6.jpg",
+      "/assets/Hubolt/img7.jpg",
+      "/assets/Hubolt/img8.jpg",
+      "/assets/Hubolt/img2.jpg",
+    ],
+    link: "",
+    description:
+      'Hubolt is an exclusive gaming platform that allows its users to play unique video games from their smartphone. Each game conveys specific emotion and feelings with each image, sound and colour.<br /><br /><p class="desc-heading">Home:</p>Easy, intuitive and personalized depending on your taste and interest is what Hubolt does with the first contact through the home. Without much effort you will be able to access the function that 90% of people need.<br /><br /><p class="desc-heading">Social:</p>Talk to friends while playing, join multiplayer games with your friends and much more. In Hubolt you can have fun with your friends and live unforgettable experience with them in your favorite games.<br /><br /><p class="desc-heading">Play and talk with friends:</p>Audio rooms allow you to create a space with friends, see what they are playing, join their games, and most importantly enjoy it.<br /><br /><p class="desc-heading">Game Library:</p>All your games in one place, resume your games from where you left off, access your games effortlessly and add favorite games.<br /><br /><p class="desc-heading">Profile:</p>You will be able to see and even show off your game status, see your trophy, compare your trophies with friends, change your status if you dont want to disturbed on the other hand you want everyone to see that you are ready to play.',
+  },
+  {
+    id: "002",
+    imageUrl: "/assets/project-img.jpeg",
+    header: "Basic UX",
+    year: "2017",
+    projectImages: [],
+    link: "",
+    description: "This is a sample description",
+  },
+  {
+    id: "003",
+    imageUrl: "/assets/project-img.jpeg",
+    header: "Basic UX",
+    year: "2017",
+    projectImages: [],
+    link: "",
+    description: "This is a sample description",
+  },
+  {
+    id: "004",
+    imageUrl: "/assets/project-img.jpeg",
+    header: "Basic UX",
+    year: "2017",
+    projectImages: [],
+    link: "",
+    description: "This is a sample description",
+  },
+];

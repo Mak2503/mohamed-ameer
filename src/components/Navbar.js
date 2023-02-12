@@ -12,14 +12,14 @@ const Navbar = () => {
             </div>
           </a>
           <div className="ml-3">
-            <div className="font-extrabold text-xl">Mohamed Ameer</div>
+            <div className="font-bold text-xl">Mohamed Ameer</div>
             <div className="" style={{ letterSpacing: "5px", fontSize: 10 }}>
               WEB & UI DESIGNER
             </div>
           </div>
         </div>
         <div className="flex">
-          <div style={{ letterSpacing: 5, fontSize: 13, fontWeight: 900 }}>
+          <div style={{ letterSpacing: 3, fontSize: 13, fontWeight: 700 }}>
             MENU
           </div>
           <div className="flex flex-col ml-2">

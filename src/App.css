@@ -1,5 +1,6 @@
 html {
-  scroll-behaviour: smooth;
+  /* scroll-behaviour: smooth; */
+  scroll-behavior: smooth;
 }
 
 .font-family-bold {
@@ -36,8 +37,6 @@ html {
   transition: all 0.2s ease;
   opacity: 0;
   position: relative;
-  /* top: 50%; */
-  /* margin-top: 20; */
   left: 50%;
   transform: translate(-50%, -50%);
   -ms-transform: translate(-50%, -50%);
@@ -58,4 +57,16 @@ html {
   font-weight: 400;
   color: #878a8f;
   text-transform: uppercase;
+}
+
+.hero-image {
+  background-image: url("/public/assets/hero.png");
+  background-repeat: no-repeat;
+  box-shadow: 0 0 8px 8px white inset;
+}
+
+.desc-heading {
+  color: black;
+  font-size: 20;
+  font-weight: 900;
 }

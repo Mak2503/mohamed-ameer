@@ -8,7 +8,12 @@ const Hero = () => {
       style={{ height: "81vh" }}
     >
       <div className="w-1/2 mb-28">
-        <span className="letterSpacedText">Mohamed Ameer</span>
+        <span
+          className="letterSpacedText"
+          style={{ fontSize: 20, fontWeight: 600 }}
+        >
+          Mohamed Ameer
+        </span>
         <h1 className="text-7xl my-5" style={{ fontWeight: 800 }}>
           Website and User interface designer
         </h1>
@@ -30,8 +35,10 @@ const Hero = () => {
         </button>
       </div>
       <div className="w-1/2 flex justify-center">
-        {/* <img src="/assets/hero-with-bg.jpg" alt="hero" /> */}
-        <img src="/assets/hero.png" alt="hero" />
+        <div className="hero-image" style={{ width: 369, height: 675 }}>
+          {/* <img src="/assets/hero-with-bg.jpg" alt="hero" /> */}
+          {/* <img src="/assets/hero.png" alt="hero" className="hero-image" /> */}
+        </div>
       </div>
     </div>
   );
