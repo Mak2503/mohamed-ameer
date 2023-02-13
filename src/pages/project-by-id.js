@@ -28,7 +28,7 @@ const ProjectById = () => {
       <div
         id="scrollBtn"
         onClick={() => topFunction()}
-        className="fixed cursor-pointer bottom-8 right-8 rounded-full w-12 h-12 text-center p-3 bg-gray-300"
+        className="fixed cursor-pointer bottom-8 right-8 rounded-full w-12 h-12 text-center p-3 bg-gray-300 bg-opacity-90 hover:bg-black hover:text-white transition-all ease-linear"
       >
         &#8593;
       </div>

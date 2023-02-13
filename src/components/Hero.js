@@ -4,6 +4,7 @@ import "./../App.css";
 const Hero = () => {
   return (
     <div
+      id="home"
       className="flex justify-between items-end w-full mt-14"
       style={{ height: "81vh" }}
     >
@@ -15,7 +16,7 @@ const Hero = () => {
           Mohamed Ameer
         </span>
         <h1 className="text-7xl my-5" style={{ fontWeight: 800 }}>
-          Website and User interface designer
+          Website and user interface designer
         </h1>
         <h3
           style={{ color: "#878a8f" }}
@@ -28,8 +29,8 @@ const Hero = () => {
           digital product is a living thing that can adapt and evolve over time.
         </h3>
         <button
-          className="hover:border-b-2 hover:border-black transition-all ease-in-out mt-4"
-          style={{ fontWeight: 900 }}
+          className="border-b-2 border-white hover:border-b-2 hover:border-black transition-all ease-in-out mt-4"
+          style={{ fontWeight: 800 }}
         >
           <a href="#projects">View Projects</a>
         </button>

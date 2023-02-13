@@ -1,6 +1,8 @@
 html {
-  /* scroll-behaviour: smooth; */
   scroll-behavior: smooth;
+  /* overflow-x: hidden; */
+  padding: 0;
+  margin: 0;
 }
 
 .font-family-bold {
@@ -20,7 +22,7 @@ html {
   opacity: 1;
   display: block;
   width: 100%;
-  max-width: 100%;
+  /* max-width: 100%; */
   height: auto;
   transition: 0.2s ease;
   backface-visibility: visible;

@@ -5,12 +5,10 @@
 @font-face {
   font-family: "HelveticaNowDisplay-Bold";
   src: local("HelveticaNowDisplay-Bold"),
-    url("./fonts/HelveticaNowDisplay-Bold.ttf") format("truetype");
-  /* font-weight: bold; */
+    url("./fonts/HelveticaNowDisplay-Bold.ttf") format(".ttf");
 }
 @font-face {
   font-family: "HelveticaNowDisplay-Regular";
   src: local("HelveticaNowDisplay-Regular"),
     url("./fonts/HelveticaNowDisplay-Regular.ttf") format("truetype");
-  /* font-weight: bold; */
 }
