@@ -8,6 +8,7 @@ import { BrowserRouter, Route, Routes } from "react-router-dom";
 import ProjectById from "./pages/project-by-id";
 import ScrollToTop from "./components/ScrollToTop";
 import { projectData } from "./projects-data";
+import { photographyData } from "./photography-data";
 
 function App() {
   return (
@@ -25,11 +26,13 @@ function App() {
                     heading="Case Studies"
                     subHeading="projects"
                     data={projectData}
+                    link="project"
                   />
                   <Projects
                     heading="Personal Projects"
                     subHeading="photography & drawings"
-                    data={projectData}
+                    data={photographyData}
+                    link="photography"
                   />
                   <Banner />
                 </div>
@@ -39,7 +42,23 @@ function App() {
               path="/projects/:id"
               element={
                 <div>
-                  <ProjectById />
+                  <ProjectById
+                    subHeading="case study"
+                    data={projectData}
+                    view="list"
+                  />
+                </div>
+              }
+            />
+            <Route
+              path="/photography/:id"
+              element={
+                <div>
+                  <ProjectById
+                    subHeading="photography"
+                    data={photographyData}
+                    view="grid"
+                  />
                 </div>
               }
             />

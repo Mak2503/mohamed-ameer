@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import ProjectCard from "./ProjectCard";
 
-const Projects = ({ heading, subHeading, data }) => {
+const Projects = ({ heading, subHeading, data, link }) => {
   return (
     <div className="mt-32">
       <div id="projects">
@@ -12,7 +12,7 @@ const Projects = ({ heading, subHeading, data }) => {
       </div>
       <div className="grid grid-cols-2 gap-14 mt-24">
         {data.map((dt) => (
-          <Link to={`/projects/${dt.id}`}>
+          <Link to={`/${link}/${dt.id}`}>
             <ProjectCard
               key={dt.id}
               imgUrl={dt.imageUrl}

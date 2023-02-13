@@ -1,9 +1,8 @@
 import { useParams } from "react-router-dom";
-import { projectData } from "../projects-data";
 
-const ProjectById = () => {
+const ProjectById = ({ data, view, subHeading }) => {
   const { id } = useParams();
-  const project = projectData.find((data) => data.id === id);
+  const project = data.find((dt) => dt.id === id);
 
   let mybutton = document.getElementById("scrollBtn");
   window.onscroll = function () {
@@ -23,6 +22,7 @@ const ProjectById = () => {
     document.body.scrollTop = 0;
     document.documentElement.scrollTop = 0;
   }
+
   return (
     <div className="mt-16">
       <div
@@ -33,7 +33,7 @@ const ProjectById = () => {
         &#8593;
       </div>
       <div>
-        <span className="letterSpacedText">case study</span>
+        <span className="letterSpacedText">{subHeading}</span>
         <div className="grid gap-20" style={{ gridTemplateColumns: "1fr 2fr" }}>
           <div className="">
             <h2
@@ -56,10 +56,12 @@ const ProjectById = () => {
           </div>
         </div>
       </div>
-      <div>
+      <div
+        className={`${view === "grid" ? "grid grid-cols-2 gap-16 mt-16" : ""}`}
+      >
         {project.projectImages.map((img, index) => (
-          <div className="my-16" key={index}>
-            <img src={img} alt={index} />
+          <div className={`${view === "list" ? "my-16" : ""}`} key={index}>
+            <img src={img} alt={index} className="w-full h-full" />
           </div>
         ))}
       </div>

@@ -18,7 +18,7 @@ const Navbar = () => {
             </div>
           </div>
         </div>
-        <div className="flex">
+        {/* <div className="flex">
           <div style={{ letterSpacing: 3, fontSize: 13, fontWeight: 700 }}>
             MENU
           </div>
@@ -27,7 +27,7 @@ const Navbar = () => {
             <div className="w-6 bg-black my-1" style={{ height: 3 }}></div>
             <div className="w-6 bg-black" style={{ height: 3 }}></div>
           </div>
-        </div>
+        </div> */}
       </div>
     </div>
   );
