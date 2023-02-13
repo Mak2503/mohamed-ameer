@@ -18,6 +18,7 @@ const Projects = ({ heading, subHeading, data }) => {
               imgUrl={dt.imageUrl}
               year={dt.year}
               description={dt.header}
+              descColor={dt.descColor}
             />
           </Link>
         ))}
