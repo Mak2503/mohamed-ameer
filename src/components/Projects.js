@@ -2,6 +2,7 @@ import { Link } from "react-router-dom";
 import ProjectCard from "./ProjectCard";
 
 const Projects = ({ heading, subHeading, data, link }) => {
+  console.log(data);
   return (
     <div className="mt-32">
       <div id="projects">

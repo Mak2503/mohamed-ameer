@@ -5,7 +5,6 @@ function importAll(r) {
 const images = importAll(
   require.context("../public/assets/personal", false, /\.(png|jpe?g|svg)$/)
 );
-console.log(images);
 
 export const photographyData = [
   {

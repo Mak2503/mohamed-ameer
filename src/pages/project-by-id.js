@@ -3,6 +3,7 @@ import { useParams } from "react-router-dom";
 const ProjectById = ({ data, view, subHeading }) => {
   const { id } = useParams();
   const project = data.find((dt) => dt.id === id);
+  console.log(project);
 
   let mybutton = document.getElementById("scrollBtn");
   window.onscroll = function () {

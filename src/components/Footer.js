@@ -21,13 +21,13 @@ const Footer = () => {
       <div>
         <div className="text-2xl mb-5 font-bold">Follow me on</div>
         <div className="grid grid-cols-4 gap-4">
-          <a href="https://dribbble.com" target="_blank" rel="noreferrer">
+          {/* <a href="https://dribbble.com" target="_blank" rel="noreferrer">
             <img
               src="/assets/dribbble.svg"
               alt="dribbble"
               className="w-6 h-6"
             />
-          </a>
+          </a> */}
           <a
             href="https://instagram.com/mohamedameer07?igshid=MDM4ZDc5MmU="
             target="_blank"
@@ -36,7 +36,7 @@ const Footer = () => {
             <img
               src="/assets/instagram.svg"
               alt="instagram"
-              className="w-6 h-6"
+              className="w-7 h-7"
             />
           </a>
           <a
@@ -44,7 +44,7 @@ const Footer = () => {
             target="_blank"
             rel="noreferrer"
           >
-            <img src="/assets/behance.svg" alt="behance" className="w-6 h-6" />
+            <img src="/assets/behance.svg" alt="behance" className="w-7 h-7" />
           </a>
           <a
             href="https://www.linkedin.com/in/mohamed-ameer-9a614824a"
@@ -54,7 +54,7 @@ const Footer = () => {
             <img
               src="/assets/linkedin.svg"
               alt="linkedin"
-              className="w-6 h-6"
+              className="w-7 h-7"
             />
           </a>
         </div>
